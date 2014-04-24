@@ -26,7 +26,10 @@ Der Index bzw. das Staging Area ist ein vorläufiger Commit, an dem Sie gerade a
 # Ein bisschen Markdown
 Es gibt in RStudio und im Internet **viel** zu Markdown. RStudio nutzt einen besonderen Dialekt, damit auch R-Code-Blöcke eingebaut werden können, aber der Großteil der "Syntax" ändert sich nicht. Fügen Sie hier eine ungeordnete Liste hier mit zumindest zwei Erwartungen von diesem Kurs ein. Testen Sie, dass Sie das korrekt formatiert haben, indem Sie auf "Knit HTML" klicken und schauen, dass die Liste mit Punkten erscheint.  
 
-list_hier
+**Liste mit Erwartungen an den Kurs:**
+- Codierung mit R verstehen
+- Verstehen wofür ich Statistik benötige
+- Verstehen der Relevanz von Statistik in der Sprachwissenschaft
 
 ## R-Code-Blöcke
 
