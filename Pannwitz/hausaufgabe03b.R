@@ -74,7 +74,7 @@ print(median(my.data))
 
 # aber nicht für den Modalwert!
 # Es gibt aber andere Funktionen, die uns da helfen.
-more.data <- c("m","m","w","m","w","m","m","w","m","m","w","w","m","w","m")
+more.data <- c("m","m","w","m","w","m","m","w","m","m","w","w","m","w","m","m","m")
 
 # with table()
 print(table(more.data))
@@ -110,14 +110,15 @@ print(tabelle.sorted)
 
 # Nehmen Sie das erste Element aus dem obigen Ergebnis, um den Modalwert zu
 # bekommen:
-# modus <- code_hier
+modus <- code.hier
+
 
 # Verständisfrage: gibt es immer nur *einen* Modalwert? 
 # Wenn nicht, ist der Code oben korrekt? Warum?
 # Schreiben Sie Ihre Antwort als Comment hier.
 
-# antwort_hier
-
+# Nein, je nach Anzahl der Modi kann es auch bi- oder multimodale Verteilungen geben. 
+# 
 # Als Abscheid ein Beispiel mit der Darstellung Frequenzdaten mit Säulendiagramm
 # bzw. Histogramm
 
