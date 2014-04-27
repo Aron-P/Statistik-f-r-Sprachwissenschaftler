@@ -1,6 +1,6 @@
 # Hausaufgabe 03
 # Aron Pannwitz <Pannwitz@students.uni-marburg.de>
-# 2014-04-24
+# 2014-04-25
 # Dieses Werk ist lizenziert unter einer CC-BY-NC-SA Lizenz.
 
 # Sie sollten die Datei auch in Ihren Ordner kopieren und einen Commit machen, 
@@ -110,15 +110,16 @@ print(tabelle.sorted)
 
 # Nehmen Sie das erste Element aus dem obigen Ergebnis, um den Modalwert zu
 # bekommen:
-modus <- code.hier
-
+modus <- which.max (tabelle.sorted)
+print (modus)
 
 # Verständisfrage: gibt es immer nur *einen* Modalwert? 
 # Wenn nicht, ist der Code oben korrekt? Warum?
 # Schreiben Sie Ihre Antwort als Comment hier.
 
 # Nein, je nach Anzahl der Modi kann es auch bi- oder multimodale Verteilungen geben. 
-# 
+# Der vorliegende Code ist richtig, da in der Datenreihe nur zwei unterschiedliche Elemente vorkommen, von denen eines häufiger auftritt als das Andere.
+#
 # Als Abscheid ein Beispiel mit der Darstellung Frequenzdaten mit Säulendiagramm
 # bzw. Histogramm
 
