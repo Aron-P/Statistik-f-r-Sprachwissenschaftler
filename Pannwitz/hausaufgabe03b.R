@@ -117,7 +117,7 @@ print (modus)
 # Wenn nicht, ist der Code oben korrekt? Warum?
 # Schreiben Sie Ihre Antwort als Comment hier.
 
-# Nein, je nach Anzahl der Modi kann es auch bi- oder multimodale Verteilungen geben. 
+# Nein, je nachdem wieviele unterschiedliche Elemente in der Datenreihe sind kann es auch bi- oder multimodale Verteilungen geben. 
 # Der vorliegende Code ist richtig, da in der Datenreihe nur zwei unterschiedliche Elemente vorkommen, von denen eines häufiger auftritt als das Andere.
 #
 # Als Abscheid ein Beispiel mit der Darstellung Frequenzdaten mit Säulendiagramm
