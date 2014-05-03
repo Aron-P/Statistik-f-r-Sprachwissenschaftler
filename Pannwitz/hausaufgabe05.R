@@ -37,9 +37,9 @@ print(weight.grafik)
 # Wenn wir verschiedene Grafiken mit einem Datenzsatz machen möchten, ist es
 # nervig, wenn wir den gemeinsamen Teil immer wieder eingeben müssen. Auch Teile
 # von ggplot-Grafiken können einer Variabel zugewiesen werden:
-#weight.grafik.basis <- ggplot(data=dat,aes(x=weight))
-#print(weight.grafik.basis + geom_histogram())
-#print(weight.grafik.basis + geom_density())
+weight.grafik.basis <- ggplot(data=dat,aes(x=weight))
+print(weight.grafik.basis + geom_histogram())
+print(weight.grafik.basis + geom_density())
 
 # Wir haben auch mal die qplot()-Funktion gesehen. Sie ergibt eigentlich das
 # Gleiche wie die "ggplot() + ..."-Befehle, hat nun eine andere Schnittstelle. 
