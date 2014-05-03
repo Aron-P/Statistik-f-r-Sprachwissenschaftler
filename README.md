@@ -5,7 +5,7 @@
 Diese Veranstaltung bietet eine praktische Einführung in statistische Verfahren und deren Anwendung auf sprachliche Beispiele. Sie vermittelt Grundlagenwissen sowohl aus dem Bereich der deskriptiven Statistik als auch über die gängigsten inferenzstatistischen Verfahren, die im Bereich der Sprache angewendet werden. Alle theoretischen Grundkenntnisse werden anhand von praktischen Übungen vertieft, die mit Hilfe des (frei verfügbaren) Statistikprogramms "R" durchgeführt werden. Nachdem die Teilnehmer Grundlagenkenntnisse in R erworben haben, werden darauf aufbauend Beispielfragestellungen aus unterschiedlichen sprachrelevanten Bereichen bearbeitet. Dabei wird neben der Frage nach einem angemessenen experimentellen Design und dem geeigneten statistischen Verfahren auch die praktische Umsetzung der Auswertung in R im Mittelpunkt stehen. Nach Besuch dieser Veranstaltung sollten Teilnehmer in der Lage sein, eigene Daten statistisch zu analysieren.
 
 # Organisatorisches
-- **Termin** montags 12-14 Uhr c.t. und dienstags 10-12 Uhr c.t.; Raum 03C01
+- **Termin** montags 12-14 Uhr c.t. Raum HSG +1/0120 und dienstags 10-12 Uhr c.t. WR6 01C08; 
 - **Anzahl der ECTS-Punkte und Art der Prüfung (Klausur, "Hausarbeit") nach der jeweilgen Prüfungsordnung.**
 - **Vorausgesetzt für die Zulassung zur Prüfung sind**
     - regelmäßige Teilnahme, inkl. Hausaufgaben zu jedem Termin -- siehe Blatt dazu
@@ -24,9 +24,17 @@ Woche | Datum          | Themen
 01.   | **14.04.2014** | Formalia, Einführung, (Textdateien &) DVCS, Warm-Up: Kombinatorik
 |     | **15.04.2014** | Warum Statistik? R, RStudio, Git
 02.   | **21.04.2014** | fällt aus! (Ostermontag) Ersatz-Lektüre: Stevens (1946)
-|     | **22.04.2014** | Beschreibungsstatistik  I
-03.   | **28.04.2014** | Beschreibungsstatistik  II
-|     | **29.04.2014** | 
+|     | **22.04.2014** | Warum Statistik? Ziele der Forschung, Modelle, Beschreibungsstatistik  I (Maße der zentralen Tendenz)
+|     |                | *Hausaufgabe bis 28.04.2014, 12 Uhr:* (in der Reihenfolge machen!)
+|     |                | 1. `hausaufgabe03a.Rmd`
+|     |                | 2. `hausaufgabe03b.R` 
+03.   | **28.04.2014** | Beschreibungsstatistik  II: Dispersions- und Streuungsmaße
+|     |                | *Hausaufgabe bis 29.04.2014 8 Uhr:*
+|     |                | 1. An Fragenbogen "Verteilungen" (bei ILIAS) teilnehmen
+|     |                | 2. Handout zu Logarithmen anschauen 
+|     | **29.04.2014** | Visualisierung der Daten: `ggplot2`-Basics
+|     |                | *Hausaufgabe bis 05.05.2014 12 Uhr:*
+|     |                | 1. `hausaufgabe05.R`
 04.   | **05.05.2014** | Statistische Inteferenz; Bevolkerung vs. Stichprobe; Intuition von "Messfehler" und "Wahrscheinlichkeit"
 |     | **06.05.2014** |  
 05.   | **12.05.2014** | $p$-Werte, Fehler-Arten, Frequentism vs Bayes
@@ -75,6 +83,7 @@ Die Reihe *Use R!* von Springer ist **kostenlos** über das Uni-Netz elektronisc
 * [R Bloggers](http://www.r-bloggers.com/)
 * [RSeek](http://rseek.org/)
 * [CrossValidated](http://stats.stackexchange.com/)
+* [How to Search for R Materials](http://stackoverflow.com/questions/102056/how-to-search-for-r-materials)
   
 # License
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Germany License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/de/.
