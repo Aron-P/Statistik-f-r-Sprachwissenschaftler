@@ -43,8 +43,8 @@ print(weight.grafik.basis + geom_density())
 
 # Wir haben auch mal die qplot()-Funktion gesehen. Sie ergibt eigentlich das
 # Gleiche wie die "ggplot() + ..."-Befehle, hat nun eine andere Schnittstelle. 
-#weight.grafik.alt <- qplot(x=weight,data=dat,geom="density")
-#print(weight.grafik.alt)
+weight.grafik.alt <- qplot(x=weight,data=dat,geom="density")
+print(weight.grafik.alt)
 
 # Weil das Gleiche ergeben wird, können wir auch den Ouput von qplot() mit
 # weiteren geom_XXXX() Funktionen erweitern. 
