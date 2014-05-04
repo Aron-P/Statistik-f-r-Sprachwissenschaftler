@@ -150,6 +150,6 @@ print(linkk.sd)
 print(speech.sd)
 
 # Berichten Sie jetzt die Mittelwerte und Standardabweichungen für die drei Gruppen. Die erste Gruppe steht hier als Muster:
-#print( paste("Studiengang: Klinische Linguistik","Mean:",mean(klinisch$height),"SD:",klinisch.sd) )
-#CODE_HIER
-
+print( paste("Studiengang: Klinische Linguistik","Mean:",mean(klinisch$height),"Standard Deviation:",klinisch.sd) )
+print( paste("Studiengang: Linguistik: Kognition und Kommunikation","Mean:",mean(linkk$height),"Standard Deviation:",linkk.sd))
+print( paste("Studiengang: Speech Science","Mean:",mean(speech$height),"Standard Deviation:",speech.sd))
