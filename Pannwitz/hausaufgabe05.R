@@ -89,7 +89,7 @@ print(frauen)
 #sollten Sie die Plots so machen, damit man einen Vergleich zwischen den Gruppen
 #ziehen kann. Dafür gibt es verschiedene Möglichkeiten; die Wahl bleibt Ihnen
 #überlassen. 
-frauen.studiengang.bw <- frauen + geom_boxplot(aes(x=major,y=height))
+frauen.studiengang.bw <- ggplot(data=frauen,aes(x=height)) + geom_boxplot(aes(x=major,y=height))
 print(frauen.studiengang.bw)
 
 #height.grafik.basis <- ggplot(data=frauen,aes(x=height))
