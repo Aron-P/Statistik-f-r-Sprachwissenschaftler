@@ -94,11 +94,12 @@ for (s in c(3, 4, 5)) {
 
 Wie steht die Anzahl guter Noten in Beziehung zur Anzahl schlechter Noten? 
 
-antwort_hier
+Je niedriger die Standardabweichung, desto weniger sehr gute Noten gibt es. Gleichzeitig ist die Durchfallrate bei niedriger Standardabweichung sehr gering. Wenn eine hohe Standardabweichung festgelegt wird, gibt es mehr sehr gute Noten und mehr "Durchfaller".
 
 Warum?
 
-antwort_hier
+Einerseits ist die Range für exellente Noten um zwei Notenpunkte kleiner, 
+
 
 ## Kurtosis und Schiefe
 Kurtosis (im Deutschen auch *Wölbung*) ist ein Maß dafür, wie spitz eine Verteilung ist. Die Normalverteilung wird nie zu extrem spitz -- der Gipfel bleibt immer schön rund, obwohl er manchmal eng wird. Andere Verteilungen (z.B. die Laplace-Verteilung ) haben Gipfel, die nicht rund sind.   
@@ -107,7 +108,7 @@ Schiefe (*skewness*) beschriebt die (A)Symmetrie einer Verteilung. Eine Verteilu
 
 Die Verteilung von Noten ist oft schief mit mehr guten Noten. Ist die Verteilung rechts- oder linksschief?
 
-antwort_hier
+Die Notenverteilung ist linksschief, da sich die höheren Notenpunkte weiter rechts auf der x-Achse stehen.
 
 Vielleicht hilft folgende Grafik mit der Visualisierung:
 
@@ -138,15 +139,15 @@ Beantworten Sie ein paar Fragen über die Verteilung, indem Sie den passenden R-
 
 2. Wie viele Studenten bekommen zumindest 10 NP?
 
-    `code_hier` Studenten bekommen zumindest 10 Notenpunkte.
+       `r (pnorm(10,mean=mu,sd=3,lower.tail=FALSE)) *n` Studenten bekommen zumindest 10 Notenpunkte.
 
 3. Wie viele Studenten bekommen weniger als 10 NP?
 
-    `code_hier` Studenten bekommen weniger als 10 Notenpunkte.
+    `r (pnorm(10,mean=mu,sd=3) - pnorm(0,mean=mu,sd=3) ) * n` Studenten bekommen weniger als 10 Notenpunkte.
 
 4. Wie viele Studenten bekommen weniger als 8 NP?
 
-    `code_hier` Studenten bekommen weniger als 8 Notenpunkte.
+    `r (pnorm(8,mean=mu,sd=3) - pnorm(0,mean=mu,sd=3) ) * n` Studenten bekommen weniger als 8 Notenpunkte.
 
 
 (Die Einrückung mit 4 Leerschlägen ist die Syntax für mehrere Absätze pro Punkt auf der Liste.)
