@@ -153,13 +153,13 @@ Beantworten Sie ein paar Fragen über die Verteilung, indem Sie den passenden R-
 (Die Einrückung mit 4 Leerschlägen ist die Syntax für mehrere Absätze pro Punkt auf der Liste.)
 
 ## Von Noten zu Perzentilen -- ich möchte mich den anderen überlegen fühlen!
-Manchmal will man in die andere Richtung gehen -- z.B. um die Frage beantworten zu können, welche Note man erreichen muss, um überdurchschnittlich zu sein. Dafür haben wir `qnorm()`. Überdurchschnittlich heißt "besser als die Hälfte abscheiden" (duh!) und wir nehmen wieder an, dass die Standardabweichung gleich 3 ist. Dann haben wir die Aussage:
+Manchmal will man in die andere Richtung gehen -- z.B. um die Frage beantworten zu können, welche Note man erreichen muss, um überdurchschnittlich zu sein. Dafür haben wir `qnorm()`. Überdurchschnittlich heißt "besser als die Hälfte abschneiden" (duh!) und wir nehmen wieder an, dass die Standardabweichung gleich 3 ist. Dann haben wir die Aussage:
 
 Um überdurchschnittlich zu sein, muss man mehr als `r qnorm(0.5,mean=mu,sd=3)` Notenpunkte bekommen. 
 
 Nicht so überraschend, dass "überdurchschnittlich" auch "mehr Punkte als den Durchschnitt bekommen" heißt! Wie sieht es aus, wenn wir besser als 99% der anderen abschließen möchten?
 
-Um in dem besten 1% abzuschließen, muss man zumindest `code_hier` Notenpunkte bekommen.
+Um unter den besten 1% abzuschließen, muss man zumindest `r qnorm(0.99,mean=mu,sd=3)` Notenpunkte bekommen.
 
 ## z-Transformation
 Bei der Überprüfung der Lehrqualität scheint es der Verwaltung, dass ein gewisser Dozent andere Noten als andere Dozenten vergibt. Es wird entschieden, dass der Notenspiegel bei den Teilnehmern in einem von seinen Kursen getestet wird, um zu schauen, ob er sich von signifikant von der idealisierten Notenverteilung ($\mu=8,\sigma=3$) unterscheidet. Um zu zeigen, dass Gott $\alpha=0.06$ so viel liebt wie $\alpha=0.05$ `r citep("10.1037/0003-066X.44.10.1276")`, setzt die Verwaltung das Signikanzniveau auf 0.06. 
