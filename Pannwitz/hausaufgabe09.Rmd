@@ -78,7 +78,8 @@ print(f.test)
 # F-Test "Varianzen Gleich" ist.
 
 # Berechenen Sie den Levene Test:
-#print(CODE_HIER)
+levn.test <- leveneTest(rt$RT ~ rt$subj)
+print(levn.test)
 
 # Sind die Varianzen homogen? Vergessen Sie nicht, dass die Nullhypothese beim
 # Levene Test "Varianzen Gleich" ist.
@@ -87,8 +88,8 @@ print(f.test)
 # eine Korrektur der Freiheitsgerade macht. Bei homogener Varianz sollten beide
 # Variante ähnliche bzw. (fast) gleiche Ergebnisse liefern. Ist das hier der
 # Fall?
-# two.sample <- CODE_HIER
-# welch <- CODE_HIER
+# two.sample <- t.test(subj1,subj2,var.equal=TRUE)
+# welch <- t.test(subj1,subj2)
 
 # print(two.sample)
 # print(welch)
