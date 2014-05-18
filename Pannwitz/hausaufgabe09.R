@@ -163,4 +163,7 @@ if (shapiro.subj2.log$p.value > 0.05){ print("Shapiro's test für subj2.log insi
 # Schluss den (Welch) t-Test für die logarithmischen Daten. Bekommen Sie das
 # gleiche Ergebnisse wie bei den Ausgangsdaten?
 
-# CODE_HIER
+Welch <- t.test(subj1.log,subj2.log)
+
+if (Welch$p.value > 0.05){ print(" Welch-Test insignikant, die Daten sind normal verteilt.")}else{
+  print("Welch-Test signikant, die Daten sind nicht normal verteilt.")}
