@@ -85,7 +85,8 @@ qqnorm(wernicke.lex.dec)
 qqline(wernicke.lex.dec)
 ```
 
-QQ Plots: Vergelich mieinander
+QQ Plots: Vergleich miteinander
+Gegenüberstellung von zwei Datenreihen. Wenn es eine Diagonale gibt, sind die Varianzen homogen verteilt
 =====================================
 ```{r}
 qqplot(broca.lex.dec,wernicke.lex.dec)
