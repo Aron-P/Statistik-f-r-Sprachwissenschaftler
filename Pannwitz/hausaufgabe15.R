@@ -74,10 +74,13 @@ ggplot(women.metric,aes(x=weight.kg,y=height.cm)) +  geom_point() + geom_smooth(
 # Hat sich der R^2 Wert geändert? Die t-Werte? Die Koeffizienten? Was ist die
 # Beziehung zwischen diesem Modell und m2?
 
-# Wie sieht es aus mit den Daten zum Kursteilnehmern? Plotten Sie und berechnen
+# Wie sieht es aus mit den Daten der Kursteilnehmer? Plotten Sie und berechnen
 # Sie ein Modell für das Gewicht der Teilnehmer als Funktion von Körpergröße.
 
-# CODE_HIER
+ggplot(body,aes(x=height,y=weight)) +  geom_point() + geom_smooth(method="lm")
+m4 <- lm(height ~ weight, data=body)
+print(summary(m4))
+
 
 # Warum funktioniert die Regression besser beim Datensatz "women" als bei den
 # Kursteilnehmerdaten? HINT: Lesen Sie die Hilfe-Beschreibung von women! 
